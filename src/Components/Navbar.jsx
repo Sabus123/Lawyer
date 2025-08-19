@@ -50,7 +50,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-3">
-     <a className="btn bg-amber-50">Free services</a>
+     <a className="btn bg-amber-50 text-xl font-black">Free services</a>
     <a className="btn bg-green-500">My Profile</a>
   </div>
 </div>

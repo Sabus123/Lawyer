@@ -6,57 +6,69 @@ const About = () => {
            <div class="max-w-4xl mx-auto p-6">
 
 <header class="bg-indigo-600 text-white rounded-xl p-8 text-center shadow-lg mb-8">
-  <h1 class="text-4xl font-bold mb-2">React Blog</h1>
-  <p class="text-lg">A Quick Dive into React Core Concepts</p>
+  <h1 class="text-4xl font-bold mb-2">আইনজীবী সম্পর্কিত</h1>
+  <p class="text-lg">আইনজীবী হলো একজন পেশাদার ব্যক্তি যিনি আইনি পরামর্শ দেন, মামলা পরিচালনা করেন এবং ক্লায়েন্টের অধিকার রক্ষা করেন। তারা আদালতে ক্লায়েন্টের পক্ষে যুক্তি দেন এবং আইনের জ্ঞান ব্যবহার করে সমস্যা সমাধান করেন।</p>
 </header>
 
 
 <article class="bg-white rounded-lg shadow p-6 mb-6">
-  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">What is useState and how does it work in React?</h2>
+  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">একজন আইনজীবীর কাজ কী?</h2>
   <p class="leading-relaxed">
-    The <code>useState</code> hook is a core feature in React that lets you add and manage state in functional components. 
-    It returns an array containing the current state and a function to update it. When the update function is called, the component re-renders with the new state. 
-    It's useful for toggles, input forms, counters, and dynamic UI changes.
+     আইনজীবী তার ক্লায়েন্টকে আইনি পরামর্শ দেন, মামলা পরিচালনা করেন, আইনি নথি প্রস্তুত করেন এবং আদালতে ক্লায়েন্টের অধিকার রক্ষা করেন।
   </p>
 </article>
 
 
 <article class="bg-white rounded-lg shadow p-6 mb-6">
-  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">What is the purpose of useEffect in React?</h2>
+  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">আইনজীবী ও অ্যাডভোকেটের মধ্যে পার্থক্য কী?</h2>
   <p class="leading-relaxed">
-    The <code>useEffect</code> hook handles side effects in React components — like data fetching, subscriptions, and manually changing the DOM. 
-    It runs after the component is rendered. You can control when it runs by specifying dependencies. 
-    It replaces lifecycle methods like <code>componentDidMount</code>, <code>componentDidUpdate</code>, and <code>componentWillUnmount</code> in class components.
+    <span className='font-bold text-black'>আইনজীবী (Lawyer):</span> যিনি আইন বিষয়ে পড়াশোনা শেষ করেছেন এবং আইনি পরামর্শ দিতে পারেন।
+
+<span className='text-black font-bold'>অ্যাডভোকেট (Advocate):</span> যিনি বার কাউন্সিলের পরীক্ষা পাস করেছেন এবং আদালতে মামলা পরিচালনার যোগ্য।
   </p>
 </article>
 
 
 <article class="bg-white rounded-lg shadow p-6 mb-6">
-  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">What is a custom hook in React and when should you use one?</h2>
+  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">কবে একজন আইনজীবীর সাহায্য নেওয়া উচিত?</h2>
   <p class="leading-relaxed">
-    A custom hook is a reusable function in React that starts with the word "use" and uses built-in hooks internally. 
-    You should create custom hooks when you need to reuse stateful logic (e.g., data fetching, form handling) across multiple components. 
-    They improve code readability, maintainability, and avoid duplication.
+    <h3>যদি আপনি—</h3>
+    <ul className='ml-5'>
+      <li>1. ফৌজদারি মামলার আসামি বা অভিযোগের মুখোমুখি হন</li>
+      <li>2. দেওয়ানি বিরোধ (সম্পত্তি, চুক্তি, পারিবারিক সমস্যা) মোকাবিলা করেন</li>
+      <li>3. ব্যবসা শুরু করতে বা চুক্তিপত্র সই করতে চান</li>
+      <li>4. উইল তৈরি করতে বা উত্তরাধিকার সংক্রান্ত বিষয়ে পড়েন</li>
+    </ul>
+    তাহলে আইনজীবীর সাহায্য নেওয়া প্রয়োজন।
   </p>
 </article>
 
 
 <article class="bg-white rounded-lg shadow p-6 mb-6">
-  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">Difference between controlled and uncontrolled components. Which one is better?</h2>
+  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">আইনজীবীরা কীভাবে ফি নেন?</h2>
   <p class="leading-relaxed">
-    In React, <strong>controlled components</strong> have their form data managed by state via hooks like <code>useState</code>. 
-    <strong>Uncontrolled components</strong> manage their own state internally using <code>ref</code>. 
-    Controlled components offer better control and are easier to validate and debug, so they are usually preferred in modern apps.
+    <h2>আইনজীবীরা সাধারণত তিনভাবে ফি নেন—</h2>
+    <ol>
+      <li><span className='text-black font-bold'>ঘণ্টা অনুযায়ী (Hourly basis) –</span> যত ঘণ্টা কাজ করবেন, সেই অনুযায়ী টাকা নেন।</li>
+      <li><span className='text-black font-bold'> নির্দিষ্ট ফি (Fixed fee) – </span> নির্দিষ্ট কাজের জন্য এককালীন ফি।</li>
+
+      <li><span className='text-black font-bold'>শর্তসাপেক্ষ ফি (Contingency fee) – </span> মামলা জিতলে টাকা নেন, হারলে নেন না (যেমন: ক্ষতিপূরণের মামলা)।</li>
+    </ol>
   </p>
 </article>
 
 
 <article class="bg-white rounded-lg shadow p-6 mb-6">
-  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">Tell us something about useFormStatus() in React.</h2>
+  <h2 class="text-2xl text-indigo-600 font-semibold mb-2">একজন ভালো আইনজীবীর গুণাবলি কী কী?</h2>
   <p class="leading-relaxed">
-    <code>useFormStatus()</code> is a hook in frameworks like Next.js (App Router) used to track the state of a form submission. 
-    It provides helpful indicators like <code>pending</code> or <code>success</code>, allowing you to disable buttons, show spinners, or display messages. 
-    It’s especially useful for enhancing UX in server-driven form handling.
+    <h2>একজন ভালো আইনজীবীর মধ্যে থাকতে হবে—</h2>
+    <ol className='ml-5'>
+      <li>1. আইনের গভীর জ্ঞান</li>
+      <li>2. ভালো যোগাযোগ ও দরকষাকষি করার দক্ষতা</li>
+      <li>3. সততা ও নৈতিকতা</li>
+      <li>4. বিশ্লেষণী ও সমস্যার সমাধান করার ক্ষমতা</li>
+      <li>5. ক্লায়েন্টের অধিকার রক্ষায় আন্তরিকতা</li>
+    </ol>
   </p>
 </article>
 
